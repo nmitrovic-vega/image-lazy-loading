@@ -11,7 +11,7 @@ function App() {
 	return (
 		<div className="App">
 			{/* <img src={galaxy} /> */}
-			<LazyImg src={galaxy} fallback={galaxyLight} alt="logo" />
+			<LazyImg src={galaxy} fallback={galaxyLight} className="galaxy" alt="logo" />
 			<div className="section section-first">
 				<img src={space} alt="logo" />
 				<img src={astronaut} className="astronaut" alt="logo" />
