@@ -14,7 +14,6 @@ function App() {
 			{/* <LazyImg src={galaxy} fallback={galaxyLight} alt="logo" /> */}
 			<div className="section section-first">
 				<img src={space} alt="logo" />
-				<img src={astronaut} className="astronaut" alt="logo" />
 			</div>
 			<div className="section section-second">
 				<RocketLoader />
