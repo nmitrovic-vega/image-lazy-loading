@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
 	return (
 		<div className="App">
-			<img src={galaxy} />
+			<img src={galaxy} className="galaxy" />
 			{/* <LazyImg src={galaxy} fallback={galaxyLight} alt="logo" /> */}
 			<div className="section section-first">
 				<img src={space} alt="logo" />
