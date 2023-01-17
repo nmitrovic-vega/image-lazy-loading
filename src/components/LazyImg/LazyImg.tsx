@@ -17,7 +17,14 @@ const LazyImg: FC<LazyImgProps> = ({ src, className, alt, fallback }) => {
 	return (
 		<picture className="lazy-img">
 			{!imgLoaded && <img src={fallback} className={classNames(className, "lazy-img__fallback")} alt={alt} />}
-			<img src={src} className={className} loading="lazy" alt={alt} onLoad={handleImgLoaded} />
+			<img
+				src={src}
+				className={className}
+				style={{ visibility: !imgLoaded ? "hidden" : "visible" }}
+				loading="lazy"
+				alt={alt}
+				onLoad={handleImgLoaded}
+			/>
 		</picture>
 	);
 };
