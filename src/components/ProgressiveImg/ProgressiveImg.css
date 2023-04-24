@@ -1,10 +1,14 @@
 .progressive-img {
     position: relative;
+    overflow: hidden;
+    display: block;
+    width: 100vw;
+    height: 100vh;
 }
 
 .progressive-img img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .progressive-img .hidden {
@@ -18,7 +22,8 @@
 .progressive-img__fallback {
     position: absolute;
     z-index: 10;
-    filter: blur(0.5rem);
+    filter: blur(10px);
+    transform: scale(1.4);
     transition: opacity 1s ease-in-out;
 }
 
